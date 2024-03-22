@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  ssh.cyrhades.com:
+    build: ssh
+  webssh.cyrhades.com:
+    build: webssh
+    ports:
+      - "80:8888"
+  why-not-a-sandbox.cyrhades.com:
+    image: anssi/fcsc2020-pwn-why-not-a-sandbox:latest
+    ports:
+      - "4000:4000"
